@@ -3,13 +3,19 @@ namespace Lab1POO
 {
     public class Person
     {
-        public string Name;
-        public string SurName;
+        private string Name;
+        private string SurName;
+
         /*Constructor*/
         public Person(string Name, string SurName)
         {
             this.Name = Name;
             this.SurName = SurName;
+        }
+        public Person()
+        {
+            Name = "Bob";
+            SurName = "Kunga";
         }
         /*Method Lanzar */
         public int Lanzar()
@@ -18,6 +24,14 @@ namespace Lab1POO
             return rdm.Next(0, 3);
 
         }
-
+        //Method return public//
+        public string GetName()
+        {
+            return Name;
+        }
+        public string GetSurName()
+        {
+            return SurName;
+        }
     }
 }

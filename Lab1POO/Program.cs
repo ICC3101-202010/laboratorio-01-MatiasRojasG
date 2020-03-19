@@ -10,13 +10,13 @@ namespace Lab1POO
             Person persona2 = new Person("Persona", "X");
 
             Console.WriteLine("Parte 1");
-            Console.WriteLine($"{persona1.Name} {persona1.SurName} hace {persona1.Lanzar()}");
-            Console.WriteLine($"{persona2.Name} {persona2.SurName} hace {persona2.Lanzar()}");
+            Console.WriteLine($"{persona1.GetName()} {persona1.GetSurName()} hace {persona1.Lanzar()}");
+            Console.WriteLine($"{persona2.GetName()} {persona2.GetSurName()} hace {persona2.Lanzar()}");
             Console.WriteLine("");
 
             Console.WriteLine("Parte 2");
-            Person pers = new Person("Bob", "Kunga");
-            Console.WriteLine(pers.Name +" "+ pers.SurName);
+            Person pers = new Person();
+            Console.WriteLine(pers.GetName() +" "+ pers.GetSurName());
             Console.ReadKey();
         }
     }
